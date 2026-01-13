@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "item001",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["electronics", "computer", "wireless"]
+  },
+  {
+    "id": "item002",
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit mechanical keyboard with blue switches",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["electronics", "computer", "keyboard"]
+  },
+  {
+    "id": "item003",
+    "name": "USB-C Cable",
+    "description": "6ft braided USB-C charging cable",
+    "price": 12.99,
+    "inStock": true,
+    "quantity": 500,
+    "tags": ["accessories", "cable", "charging"]
+  },
+  {
+    "id": "item004",
+    "name": "Laptop Stand",
+    "description": "Aluminum adjustable laptop stand",
+    "price": 45.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["accessories", "stand", "ergonomic"]
+  },
+  {
+    "id": "item005",
+    "name": "Webcam HD",
+    "description": "1080p HD webcam with built-in microphone",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["electronics", "camera", "video"]
+  },
+  {
+    "id": "item006",
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with adjustable brightness",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["lighting", "desk", "office"]
+  },
+  {
+    "id": "item007",
+    "name": "Phone Holder",
+    "description": "Adjustable phone holder for desk",
+    "price": 15.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["accessories", "phone", "holder"]
+  },
+  {
+    "id": "item008",
+    "name": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with 12-hour battery",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["electronics", "audio", "bluetooth"]
+  },
+  {
+    "id": "item009",
+    "name": "Monitor 27 inch",
+    "description": "4K UHD 27-inch monitor with HDR",
+    "price": 399.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["electronics", "monitor", "display"]
+  },
+  {
+    "id": "item010",
+    "name": "External SSD 1TB",
+    "description": "Portable SSD with USB 3.2 Gen 2",
+    "price": 129.99,
+    "inStock": true,
+    "quantity": 45,
+    "tags": ["storage", "ssd", "electronics"]
+  },
+  {
+    "id": "item011",
+    "name": "Wireless Earbuds",
+    "description": "True wireless earbuds with noise cancellation",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["audio", "wireless", "earbuds"]
+  },
+  {
+    "id": "item012",
+    "name": "Gaming Headset",
+    "description": "7.1 surround sound gaming headset",
+    "price": 99.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["gaming", "audio", "headset"]
+  },
+  {
+    "id": "item013",
+    "name": "Mousepad XXL",
+    "description": "Extended gaming mousepad 900x400mm",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["gaming", "accessories", "mousepad"]
+  },
+  {
+    "id": "item014",
+    "name": "HDMI Cable 10ft",
+    "description": "High-speed HDMI 2.1 cable",
+    "price": 18.99,
+    "inStock": true,
+    "quantity": 400,
+    "tags": ["cable", "hdmi", "video"]
+  },
+  {
+    "id": "item015",
+    "name": "Power Bank 20000mAh",
+    "description": "High-capacity portable power bank",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["charging", "portable", "battery"]
+  },
+  {
+    "id": "item016",
+    "name": "Tablet 10 inch",
+    "description": "Android tablet with 128GB storage",
+    "price": 249.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["electronics", "tablet", "mobile"]
+  },
+  {
+    "id": "item017",
+    "name": "Smart Watch",
+    "description": "Fitness tracking smartwatch with heart rate monitor",
+    "price": 199.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["wearable", "fitness", "watch"]
+  },
+  {
+    "id": "item018",
+    "name": "Microphone USB",
+    "description": "Professional USB condenser microphone",
+    "price": 69.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["audio", "microphone", "recording"]
+  },
+  {
+    "id": "item019",
+    "name": "Cable Organizer",
+    "description": "Desk cable management organizer",
+    "price": 9.99,
+    "inStock": true,
+    "quantity": 500,
+    "tags": ["accessories", "organizer", "desk"]
+  },
+  {
+    "id": "item020",
+    "name": "Laptop Bag",
+    "description": "Water-resistant laptop bag 15.6 inch",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["bag", "laptop", "accessories"]
+  },
+  {
+    "id": "item021",
+    "name": "Drawing Tablet",
+    "description": "Graphics tablet with pressure-sensitive stylus",
+    "price": 159.99,
+    "inStock": true,
+    "quantity": 35,
+    "tags": ["electronics", "creative", "tablet"]
+  },
+  {
+    "id": "item022",
+    "name": "Webcam Cover",
+    "description": "Privacy sliding webcam cover",
+    "price": 4.99,
+    "inStock": true,
+    "quantity": 1000,
+    "tags": ["privacy", "security", "accessories"]
+  },
+  {
+    "id": "item023",
+    "name": "USB Hub 7-Port",
+    "description": "Powered USB 3.0 hub with 7 ports",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 220,
+    "tags": ["hub", "usb", "accessories"]
+  },
+  {
+    "id": "item024",
+    "name": "Screen Cleaner Kit",
+    "description": "Microfiber cloth and spray for screens",
+    "price": 11.99,
+    "inStock": true,
+    "quantity": 350,
+    "tags": ["cleaning", "accessories", "maintenance"]
+  },
+  {
+    "id": "item025",
+    "name": "Keyboard Wrist Rest",
+    "description": "Memory foam keyboard wrist rest",
+    "price": 16.99,
+    "inStock": true,
+    "quantity": 175,
+    "tags": ["ergonomic", "accessories", "comfort"]
+  },
+  {
+    "id": "item026",
+    "name": "Monitor Arm",
+    "description": "Adjustable single monitor arm mount",
+    "price": 79.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["mount", "monitor", "ergonomic"]
+  },
+  {
+    "id": "item027",
+    "name": "Surge Protector",
+    "description": "8-outlet surge protector with USB ports",
+    "price": 25.99,
+    "inStock": true,
+    "quantity": 280,
+    "tags": ["power", "protection", "accessories"]
+  },
+  {
+    "id": "item028",
+    "name": "Gaming Chair",
+    "description": "Ergonomic gaming chair with lumbar support",
+    "price": 299.99,
+    "inStock": true,
+    "quantity": 25,
+    "tags": ["furniture", "gaming", "chair"]
+  },
+  {
+    "id": "item029",
+    "name": "Desk Mat",
+    "description": "Large leather desk mat 36x17 inch",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["desk", "mat", "accessories"]
+  },
+  {
+    "id": "item030",
+    "name": "Ring Light",
+    "description": "10-inch LED ring light for video",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["lighting", "video", "photography"]
+  },
+  {
+    "id": "item031",
+    "name": "Portable Monitor",
+    "description": "15.6-inch portable USB-C monitor",
+    "price": 189.99,
+    "inStock": true,
+    "quantity": 50,
+    "tags": ["monitor", "portable", "display"]
+  },
+  {
+    "id": "item032",
+    "name": "Laptop Cooling Pad",
+    "description": "Cooling pad with 6 fans",
+    "price": 32.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["cooling", "laptop", "accessories"]
+  },
+  {
+    "id": "item033",
+    "name": "Card Reader",
+    "description": "USB 3.0 multi-card reader",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 270,
+    "tags": ["accessories", "storage", "reader"]
+  },
+  {
+    "id": "item034",
+    "name": "Stylus Pen",
+    "description": "Universal capacitive stylus pen",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["accessories", "stylus", "tablet"]
+  },
+  {
+    "id": "item035",
+    "name": "Wireless Charger",
+    "description": "Qi wireless charging pad",
+    "price": 22.99,
+    "inStock": true,
+    "quantity": 190,
+    "tags": ["charging", "wireless", "accessories"]
+  },
+  {
+    "id": "item036",
+    "name": "Blue Light Glasses",
+    "description": "Computer glasses with blue light filter",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["health", "glasses", "accessories"]
+  },
+  {
+    "id": "item037",
+    "name": "Printer All-in-One",
+    "description": "Wireless all-in-one color printer",
+    "price": 179.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["printer", "office", "electronics"]
+  },
+  {
+    "id": "item038",
+    "name": "Paper Shredder",
+    "description": "Cross-cut paper shredder",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 60,
+    "tags": ["office", "security", "shredder"]
+  },
+  {
+    "id": "item039",
+    "name": "Label Maker",
+    "description": "Handheld label maker with LCD display",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["office", "organizer", "label"]
+  },
+  {
+    "id": "item040",
+    "name": "Stapler Electric",
+    "description": "Heavy-duty electric stapler",
+    "price": 54.99,
+    "inStock": true,
+    "quantity": 40,
+    "tags": ["office", "stapler", "supplies"]
+  },
+  {
+    "id": "item041",
+    "name": "Desk Organizer",
+    "description": "Bamboo desk organizer with drawers",
+    "price": 28.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["organizer", "desk", "office"]
+  },
+  {
+    "id": "item042",
+    "name": "Whiteboard 48x36",
+    "description": "Magnetic dry erase whiteboard",
+    "price": 64.99,
+    "inStock": true,
+    "quantity": 45,
+    "tags": ["office", "whiteboard", "writing"]
+  },
+  {
+    "id": "item043",
+    "name": "Projector Mini",
+    "description": "Portable mini projector 1080p",
+    "price": 149.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["projector", "video", "electronics"]
+  },
+  {
+    "id": "item044",
+    "name": "Document Scanner",
+    "description": "Portable document scanner",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 70,
+    "tags": ["scanner", "office", "document"]
+  },
+  {
+    "id": "item045",
+    "name": "Calculator Scientific",
+    "description": "Scientific calculator with large display",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["calculator", "office", "math"]
+  },
+  {
+    "id": "item046",
+    "name": "Notebook Set",
+    "description": "Set of 5 hardcover notebooks",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["stationery", "notebook", "writing"]
+  },
+  {
+    "id": "item047",
+    "name": "Pen Set Premium",
+    "description": "10-piece premium ballpoint pen set",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["stationery", "pen", "writing"]
+  },
+  {
+    "id": "item048",
+    "name": "Planner 2024",
+    "description": "Daily planner with monthly calendar",
+    "price": 18.99,
+    "inStock": true,
+    "quantity": 220,
+    "tags": ["planner", "organizer", "calendar"]
+  },
+  {
+    "id": "item049",
+    "name": "Sticky Notes Pack",
+    "description": "Assorted color sticky notes 12-pack",
+    "price": 12.99,
+    "inStock": true,
+    "quantity": 400,
+    "tags": ["stationery", "notes", "office"]
+  },
+  {
+    "id": "item050",
+    "name": "File Cabinet",
+    "description": "2-drawer metal file cabinet",
+    "price": 129.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["furniture", "storage", "office"]
+  },
+  {
+    "id": "item051",
+    "name": "Bookshelf 5-Tier",
+    "description": "Wooden 5-tier bookshelf",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 35,
+    "tags": ["furniture", "storage", "shelf"]
+  },
+  {
+    "id": "item052",
+    "name": "Standing Desk",
+    "description": "Electric height-adjustable standing desk",
+    "price": 449.99,
+    "inStock": true,
+    "quantity": 20,
+    "tags": ["furniture", "desk", "ergonomic"]
+  },
+  {
+    "id": "item053",
+    "name": "Office Chair",
+    "description": "Mesh back office chair with armrests",
+    "price": 159.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["furniture", "chair", "office"]
+  },
+  {
+    "id": "item054",
+    "name": "Footrest",
+    "description": "Adjustable footrest with massage texture",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["ergonomic", "comfort", "accessories"]
+  },
+  {
+    "id": "item055",
+    "name": "Monitor Privacy Filter",
+    "description": "24-inch monitor privacy screen",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["privacy", "monitor", "security"]
+  },
+  {
+    "id": "item056",
+    "name": "Router WiFi 6",
+    "description": "Dual-band WiFi 6 router",
+    "price": 129.99,
+    "inStock": true,
+    "quantity": 80,
+    "tags": ["networking", "router", "wifi"]
+  },
+  {
+    "id": "item057",
+    "name": "Network Switch 8-Port",
+    "description": "Gigabit ethernet switch 8 ports",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["networking", "switch", "ethernet"]
+  },
+  {
+    "id": "item058",
+    "name": "Ethernet Cable 25ft",
+    "description": "Cat 6 ethernet cable 25 feet",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 350,
+    "tags": ["cable", "networking", "ethernet"]
+  },
+  {
+    "id": "item059",
+    "name": "Modem Cable",
+    "description": "DOCSIS 3.1 cable modem",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["networking", "modem", "internet"]
+  },
+  {
+    "id": "item060",
+    "name": "WiFi Extender",
+    "description": "Dual-band WiFi range extender",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 125,
+    "tags": ["networking", "wifi", "extender"]
+  },
+  {
+    "id": "item061",
+    "name": "Smart Plug 4-Pack",
+    "description": "WiFi smart plugs with app control",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["smart home", "plug", "automation"]
+  },
+  {
+    "id": "item062",
+    "name": "Smart Bulb 4-Pack",
+    "description": "RGB WiFi smart bulbs",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["smart home", "lighting", "bulb"]
+  },
+  {
+    "id": "item063",
+    "name": "Security Camera Indoor",
+    "description": "1080p WiFi security camera",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["security", "camera", "smart home"]
+  },
+  {
+    "id": "item064",
+    "name": "Doorbell Camera",
+    "description": "Video doorbell with motion detection",
+    "price": 149.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["security", "doorbell", "camera"]
+  },
+  {
+    "id": "item065",
+    "name": "Smart Thermostat",
+    "description": "WiFi programmable thermostat",
+    "price": 129.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["smart home", "thermostat", "climate"]
+  },
+  {
+    "id": "item066",
+    "name": "Air Purifier",
+    "description": "HEPA air purifier for large rooms",
+    "price": 199.99,
+    "inStock": true,
+    "quantity": 45,
+    "tags": ["home", "air quality", "health"]
+  },
+  {
+    "id": "item067",
+    "name": "Humidifier",
+    "description": "Ultrasonic cool mist humidifier",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["home", "humidifier", "health"]
+  },
+  {
+    "id": "item068",
+    "name": "Fan Tower",
+    "description": "Oscillating tower fan with remote",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 70,
+    "tags": ["home", "fan", "cooling"]
+  },
+  {
+    "id": "item069",
+    "name": "Space Heater",
+    "description": "Ceramic space heater with thermostat",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["home", "heater", "warming"]
+  },
+  {
+    "id": "item070",
+    "name": "Coffee Maker",
+    "description": "Programmable drip coffee maker",
+    "price": 69.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["kitchen", "coffee", "appliance"]
+  },
+  {
+    "id": "item071",
+    "name": "Electric Kettle",
+    "description": "Stainless steel electric kettle 1.7L",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["kitchen", "kettle", "appliance"]
+  },
+  {
+    "id": "item072",
+    "name": "Blender",
+    "description": "High-speed blender with multiple speeds",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["kitchen", "blender", "appliance"]
+  },
+  {
+    "id": "item073",
+    "name": "Toaster 4-Slice",
+    "description": "Stainless steel 4-slice toaster",
+    "price": 54.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["kitchen", "toaster", "appliance"]
+  },
+  {
+    "id": "item074",
+    "name": "Microwave",
+    "description": "Countertop microwave 1.1 cu ft",
+    "price": 119.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["kitchen", "microwave", "appliance"]
+  },
+  {
+    "id": "item075",
+    "name": "Food Processor",
+    "description": "12-cup food processor with attachments",
+    "price": 99.99,
+    "inStock": true,
+    "quantity": 60,
+    "tags": ["kitchen", "processor", "appliance"]
+  },
+  {
+    "id": "item076",
+    "name": "Knife Set",
+    "description": "15-piece stainless steel knife set",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 80,
+    "tags": ["kitchen", "knife", "cookware"]
+  },
+  {
+    "id": "item077",
+    "name": "Cookware Set",
+    "description": "Non-stick cookware set 10 pieces",
+    "price": 129.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["kitchen", "cookware", "pots"]
+  },
+  {
+    "id": "item078",
+    "name": "Cutting Board Set",
+    "description": "Bamboo cutting board set of 3",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["kitchen", "cutting board", "accessories"]
+  },
+  {
+    "id": "item079",
+    "name": "Measuring Cups",
+    "description": "Stainless steel measuring cups and spoons",
+    "price": 16.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["kitchen", "measuring", "baking"]
+  },
+  {
+    "id": "item080",
+    "name": "Mixing Bowl Set",
+    "description": "Glass mixing bowl set 5 pieces",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["kitchen", "bowl", "baking"]
+  },
+  {
+    "id": "item081",
+    "name": "Can Opener Electric",
+    "description": "Automatic electric can opener",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["kitchen", "can opener", "tool"]
+  },
+  {
+    "id": "item082",
+    "name": "Kitchen Scale",
+    "description": "Digital kitchen scale with bowl",
+    "price": 22.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["kitchen", "scale", "measuring"]
+  },
+  {
+    "id": "item083",
+    "name": "Spice Rack",
+    "description": "Rotating spice rack with 20 jars",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["kitchen", "storage", "organizer"]
+  },
+  {
+    "id": "item084",
+    "name": "Food Storage Set",
+    "description": "Glass food storage containers 20-piece",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["kitchen", "storage", "containers"]
+  },
+  {
+    "id": "item085",
+    "name": "Dish Rack",
+    "description": "Stainless steel dish drying rack",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 105,
+    "tags": ["kitchen", "rack", "drying"]
+  },
+  {
+    "id": "item086",
+    "name": "Trash Can Motion",
+    "description": "Touchless motion sensor trash can 13 gallon",
+    "price": 69.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["kitchen", "trash", "smart"]
+  },
+  {
+    "id": "item087",
+    "name": "Water Filter Pitcher",
+    "description": "Water filter pitcher 10-cup capacity",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 145,
+    "tags": ["kitchen", "water", "filter"]
+  },
+  {
+    "id": "item088",
+    "name": "Vacuum Cleaner",
+    "description": "Bagless upright vacuum cleaner",
+    "price": 149.99,
+    "inStock": true,
+    "quantity": 50,
+    "tags": ["cleaning", "vacuum", "appliance"]
+  },
+  {
+    "id": "item089",
+    "name": "Robot Vacuum",
+    "description": "Smart robot vacuum with app control",
+    "price": 299.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["cleaning", "robot", "smart home"]
+  },
+  {
+    "id": "item090",
+    "name": "Steam Mop",
+    "description": "Electric steam mop for hard floors",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["cleaning", "mop", "appliance"]
+  },
+  {
+    "id": "item091",
+    "name": "Laundry Basket",
+    "description": "Collapsible laundry basket 3-section",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["laundry", "basket", "organizer"]
+  },
+  {
+    "id": "item092",
+    "name": "Iron Steam",
+    "description": "Digital steam iron with auto shut-off",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["laundry", "iron", "appliance"]
+  },
+  {
+    "id": "item093",
+    "name": "Ironing Board",
+    "description": "Adjustable height ironing board",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["laundry", "ironing", "board"]
+  },
+  {
+    "id": "item094",
+    "name": "Clothes Hangers 50-Pack",
+    "description": "Velvet non-slip hangers",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["laundry", "hanger", "storage"]
+  },
+  {
+    "id": "item095",
+    "name": "Shower Caddy",
+    "description": "Rustproof shower caddy with hooks",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 220,
+    "tags": ["bathroom", "storage", "organizer"]
+  },
+  {
+    "id": "item096",
+    "name": "Bath Towel Set",
+    "description": "Luxury cotton bath towel set 6-piece",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["bathroom", "towel", "linens"]
+  },
+  {
+    "id": "item097",
+    "name": "Soap Dispenser Auto",
+    "description": "Automatic touchless soap dispenser",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 170,
+    "tags": ["bathroom", "soap", "dispenser"]
+  },
+  {
+    "id": "item098",
+    "name": "Toilet Paper Holder",
+    "description": "Wall-mounted toilet paper holder",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 240,
+    "tags": ["bathroom", "holder", "accessories"]
+  },
+  {
+    "id": "item099",
+    "name": "Bath Mat",
+    "description": "Memory foam bath mat non-slip",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["bathroom", "mat", "accessories"]
+  },
+  {
+    "id": "item100",
+    "name": "Shower Curtain Set",
+    "description": "Waterproof shower curtain with hooks",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["bathroom", "curtain", "shower"]
+  },
+  {
+    "id": "item101",
+    "name": "Electric Toothbrush",
+    "description": "Rechargeable sonic toothbrush with timer",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["health", "dental", "toothbrush"]
+  },
+  {
+    "id": "item102",
+    "name": "Hair Dryer",
+    "description": "Ionic hair dryer with diffuser",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["personal care", "hair", "dryer"]
+  },
+  {
+    "id": "item103",
+    "name": "Bathroom Scale",
+    "description": "Digital body weight scale with BMI",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["health", "scale", "weight"]
+  },
+  {
+    "id": "item104",
+    "name": "Mirror LED",
+    "description": "LED lighted makeup mirror 10x magnification",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["bathroom", "mirror", "lighting"]
+  },
+  {
+    "id": "item105",
+    "name": "Bedding Set Queen",
+    "description": "Microfiber bedding set queen size",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["bedroom", "bedding", "linens"]
+  },
+  {
+    "id": "item106",
+    "name": "Pillow Set",
+    "description": "Memory foam pillow set of 2",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["bedroom", "pillow", "sleep"]
+  },
+  {
+    "id": "item107",
+    "name": "Mattress Topper Queen",
+    "description": "Gel-infused memory foam topper",
+    "price": 129.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["bedroom", "mattress", "comfort"]
+  },
+  {
+    "id": "item108",
+    "name": "Alarm Clock Digital",
+    "description": "Digital alarm clock with USB charging",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["bedroom", "clock", "alarm"]
+  },
+  {
+    "id": "item109",
+    "name": "Nightstand Lamp",
+    "description": "Touch control nightstand lamp",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 115,
+    "tags": ["bedroom", "lamp", "lighting"]
+  },
+  {
+    "id": "item110",
+    "name": "Blackout Curtains",
+    "description": "Thermal insulated blackout curtains",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 145,
+    "tags": ["bedroom", "curtains", "window"]
+  },
+  {
+    "id": "item111",
+    "name": "Dresser 6-Drawer",
+    "description": "Wooden 6-drawer dresser",
+    "price": 249.99,
+    "inStock": true,
+    "quantity": 30,
+    "tags": ["furniture", "dresser", "bedroom"]
+  },
+  {
+    "id": "item112",
+    "name": "Closet Organizer",
+    "description": "Modular closet organizer system",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["storage", "closet", "organizer"]
+  },
+  {
+    "id": "item113",
+    "name": "Shoe Rack 10-Tier",
+    "description": "Stackable shoe rack holds 50 pairs",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["storage", "shoes", "rack"]
+  },
+  {
+    "id": "item114",
+    "name": "Full Length Mirror",
+    "description": "Standing full length mirror with frame",
+    "price": 69.99,
+    "inStock": true,
+    "quantity": 70,
+    "tags": ["bedroom", "mirror", "furniture"]
+  },
+  {
+    "id": "item115",
+    "name": "Area Rug 5x7",
+    "description": "Modern geometric area rug",
+    "price": 99.99,
+    "inStock": true,
+    "quantity": 60,
+    "tags": ["home", "rug", "decor"]
+  },
+  {
+    "id": "item116",
+    "name": "Wall Art Set",
+    "description": "Canvas wall art 3-piece set",
+    "price": 54.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["decor", "wall art", "canvas"]
+  },
+  {
+    "id": "item117",
+    "name": "Picture Frame Set",
+    "description": "Photo frame set 10 pieces various sizes",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 125,
+    "tags": ["decor", "frame", "photo"]
+  },
+  {
+    "id": "item118",
+    "name": "Table Lamp Pair",
+    "description": "Modern table lamp set of 2",
+    "price": 59.99,
+    "inStock": true,
+    "quantity": 80,
+    "tags": ["lighting", "lamp", "table"]
+  },
+  {
+    "id": "item119",
+    "name": "Floor Lamp",
+    "description": "Adjustable LED floor lamp",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["lighting", "lamp", "floor"]
+  },
+  {
+    "id": "item120",
+    "name": "Throw Pillows Set",
+    "description": "Decorative throw pillows 4-pack",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["decor", "pillow", "throw"]
+  },
+  {
+    "id": "item121",
+    "name": "Throw Blanket",
+    "description": "Soft fleece throw blanket 50x60",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["home", "blanket", "comfort"]
+  },
+  {
+    "id": "item122",
+    "name": "Coffee Table",
+    "description": "Modern glass-top coffee table",
+    "price": 169.99,
+    "inStock": true,
+    "quantity": 40,
+    "tags": ["furniture", "table", "living room"]
+  },
+  {
+    "id": "item123",
+    "name": "TV Stand 65 inch",
+    "description": "Entertainment center TV stand",
+    "price": 199.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["furniture", "tv stand", "entertainment"]
+  },
+  {
+    "id": "item124",
+    "name": "Sofa 3-Seater",
+    "description": "Modern fabric sofa 3-seater",
+    "price": 599.99,
+    "inStock": true,
+    "quantity": 15,
+    "tags": ["furniture", "sofa", "living room"]
+  },
+  {
+    "id": "item125",
+    "name": "Accent Chair",
+    "description": "Upholstered accent chair with arms",
+    "price": 229.99,
+    "inStock": true,
+    "quantity": 35,
+    "tags": ["furniture", "chair", "living room"]
+  },
+  {
+    "id": "item126",
+    "name": "Ottoman Storage",
+    "description": "Storage ottoman with tufted top",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["furniture", "ottoman", "storage"]
+  },
+  {
+    "id": "item127",
+    "name": "Coat Rack",
+    "description": "Freestanding coat rack with hooks",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["furniture", "rack", "storage"]
+  },
+  {
+    "id": "item128",
+    "name": "Wall Shelf Set",
+    "description": "Floating wall shelves set of 3",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["storage", "shelf", "wall"]
+  },
+  {
+    "id": "item129",
+    "name": "Plant Stand",
+    "description": "Bamboo plant stand 3-tier",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["home", "plant", "stand"]
+  },
+  {
+    "id": "item130",
+    "name": "Artificial Plant Set",
+    "description": "Realistic artificial plants set of 3",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["decor", "plant", "artificial"]
+  },
+  {
+    "id": "item131",
+    "name": "Vase Set",
+    "description": "Ceramic vase set 3 pieces",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["decor", "vase", "ceramic"]
+  },
+  {
+    "id": "item132",
+    "name": "Candle Set",
+    "description": "Scented candle gift set 6 pack",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["decor", "candle", "fragrance"]
+  },
+  {
+    "id": "item133",
+    "name": "Clock Wall Large",
+    "description": "Large decorative wall clock 24 inch",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["decor", "clock", "wall"]
+  },
+  {
+    "id": "item134",
+    "name": "Magazine Rack",
+    "description": "Metal magazine rack holder",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["storage", "rack", "organizer"]
+  },
+  {
+    "id": "item135",
+    "name": "Wastebasket Set",
+    "description": "Decorative wastebasket set of 3",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["home", "trash", "basket"]
+  },
+  {
+    "id": "item136",
+    "name": "Storage Bins 6-Pack",
+    "description": "Fabric storage bins with handles",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["storage", "bins", "organizer"]
+  },
+  {
+    "id": "item137",
+    "name": "Plastic Containers Set",
+    "description": "Clear plastic storage containers 12-pack",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 220,
+    "tags": ["storage", "containers", "plastic"]
+  },
+  {
+    "id": "item138",
+    "name": "Tool Set 168-Piece",
+    "description": "Comprehensive tool set with case",
+    "price": 99.99,
+    "inStock": true,
+    "quantity": 50,
+    "tags": ["tools", "set", "repair"]
+  },
+  {
+    "id": "item139",
+    "name": "Drill Cordless",
+    "description": "20V cordless drill with battery",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["tools", "drill", "power tools"]
+  },
+  {
+    "id": "item140",
+    "name": "Screwdriver Set",
+    "description": "Precision screwdriver set 32-piece",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["tools", "screwdriver", "repair"]
+  },
+  {
+    "id": "item141",
+    "name": "Tape Measure 25ft",
+    "description": "Heavy-duty tape measure",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["tools", "measuring", "tape"]
+  },
+  {
+    "id": "item142",
+    "name": "Level Laser",
+    "description": "Self-leveling laser level",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 70,
+    "tags": ["tools", "level", "laser"]
+  },
+  {
+    "id": "item143",
+    "name": "Stud Finder",
+    "description": "Electronic stud finder with LCD",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["tools", "finder", "stud"]
+  },
+  {
+    "id": "item144",
+    "name": "Flashlight LED",
+    "description": "Rechargeable LED flashlight 2-pack",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["tools", "flashlight", "lighting"]
+  },
+  {
+    "id": "item145",
+    "name": "Work Light LED",
+    "description": "Portable LED work light with stand",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 80,
+    "tags": ["tools", "lighting", "work light"]
+  },
+  {
+    "id": "item146",
+    "name": "Extension Cord 25ft",
+    "description": "Heavy-duty outdoor extension cord",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["tools", "cord", "extension"]
+  },
+  {
+    "id": "item147",
+    "name": "Ladder 6ft",
+    "description": "Aluminum folding step ladder",
+    "price": 79.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["tools", "ladder", "safety"]
+  },
+  {
+    "id": "item148",
+    "name": "Toolbox",
+    "description": "Portable tool box with organizer",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 95,
+    "tags": ["tools", "storage", "box"]
+  },
+  {
+    "id": "item149",
+    "name": "Work Gloves 6-Pack",
+    "description": "Heavy-duty work gloves",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["tools", "safety", "gloves"]
+  },
+  {
+    "id": "item150",
+    "name": "Safety Glasses 10-Pack",
+    "description": "Clear safety glasses with side shields",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["safety", "glasses", "protection"]
+  },
+  {
+    "id": "item151",
+    "name": "Garden Hose 50ft",
+    "description": "Expandable garden hose with nozzle",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["garden", "hose", "outdoor"]
+  },
+  {
+    "id": "item152",
+    "name": "Garden Tool Set",
+    "description": "10-piece garden tool set with bag",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 85,
+    "tags": ["garden", "tools", "outdoor"]
+  },
+  {
+    "id": "item153",
+    "name": "Lawn Mower Electric",
+    "description": "Corded electric lawn mower",
+    "price": 199.99,
+    "inStock": true,
+    "quantity": 35,
+    "tags": ["garden", "mower", "lawn"]
+  },
+  {
+    "id": "item154",
+    "name": "Leaf Blower",
+    "description": "Electric leaf blower and vacuum",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["garden", "blower", "outdoor"]
+  },
+  {
+    "id": "item155",
+    "name": "Patio Furniture Set",
+    "description": "4-piece outdoor patio furniture set",
+    "price": 399.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["outdoor", "furniture", "patio"]
+  },
+  {
+    "id": "item156",
+    "name": "Grill Gas",
+    "description": "3-burner propane gas grill",
+    "price": 299.99,
+    "inStock": true,
+    "quantity": 30,
+    "tags": ["outdoor", "grill", "bbq"]
+  },
+  {
+    "id": "item157",
+    "name": "Cooler 50-Quart",
+    "description": "Insulated cooler with wheels",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 65,
+    "tags": ["outdoor", "cooler", "camping"]
+  },
+  {
+    "id": "item158",
+    "name": "Camping Tent 4-Person",
+    "description": "Waterproof camping tent",
+    "price": 129.99,
+    "inStock": true,
+    "quantity": 45,
+    "tags": ["camping", "tent", "outdoor"]
+  },
+  {
+    "id": "item159",
+    "name": "Sleeping Bag",
+    "description": "3-season sleeping bag with compression sack",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["camping", "sleeping", "outdoor"]
+  },
+  {
+    "id": "item160",
+    "name": "Camping Chair",
+    "description": "Folding camping chair with cup holder",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["camping", "chair", "outdoor"]
+  },
+  {
+    "id": "item161",
+    "name": "Backpack Hiking",
+    "description": "50L hiking backpack with rain cover",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 70,
+    "tags": ["camping", "backpack", "hiking"]
+  },
+  {
+    "id": "item162",
+    "name": "Water Bottle Insulated",
+    "description": "32oz stainless steel water bottle",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["outdoor", "water", "bottle"]
+  },
+  {
+    "id": "item163",
+    "name": "Headlamp LED",
+    "description": "Rechargeable LED headlamp 2-pack",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["camping", "lighting", "headlamp"]
+  },
+  {
+    "id": "item164",
+    "name": "First Aid Kit",
+    "description": "Comprehensive first aid kit 200 pieces",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["safety", "health", "first aid"]
+  },
+  {
+    "id": "item165",
+    "name": "Fire Extinguisher",
+    "description": "Multi-purpose fire extinguisher 5lb",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["safety", "fire", "emergency"]
+  },
+  {
+    "id": "item166",
+    "name": "Smoke Detector 6-Pack",
+    "description": "Photoelectric smoke detectors",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["safety", "smoke", "detector"]
+  },
+  {
+    "id": "item167",
+    "name": "Carbon Monoxide Detector",
+    "description": "Digital CO detector with battery backup",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["safety", "detector", "carbon monoxide"]
+  },
+  {
+    "id": "item168",
+    "name": "Doorstop Alarm",
+    "description": "Security doorstop alarm 2-pack",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["security", "alarm", "door"]
+  },
+  {
+    "id": "item169",
+    "name": "Safe Box",
+    "description": "Digital security safe box",
+    "price": 69.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["security", "safe", "storage"]
+  },
+  {
+    "id": "item170",
+    "name": "Bike Lock Cable",
+    "description": "Heavy-duty bike lock cable with key",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["security", "bike", "lock"]
+  },
+  {
+    "id": "item171",
+    "name": "Exercise Mat",
+    "description": "Non-slip yoga exercise mat 6mm",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["fitness", "yoga", "mat"]
+  },
+  {
+    "id": "item172",
+    "name": "Resistance Bands Set",
+    "description": "Exercise resistance bands 5-piece set",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["fitness", "exercise", "bands"]
+  },
+  {
+    "id": "item173",
+    "name": "Dumbbell Set",
+    "description": "Adjustable dumbbell set 50lb",
+    "price": 149.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["fitness", "weights", "dumbbell"]
+  },
+  {
+    "id": "item174",
+    "name": "Jump Rope",
+    "description": "Speed jump rope with counter",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["fitness", "cardio", "jump rope"]
+  },
+  {
+    "id": "item175",
+    "name": "Foam Roller",
+    "description": "High-density foam roller for muscle recovery",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 170,
+    "tags": ["fitness", "recovery", "foam roller"]
+  },
+  {
+    "id": "item176",
+    "name": "Exercise Ball",
+    "description": "Anti-burst exercise ball 65cm",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["fitness", "ball", "exercise"]
+  },
+  {
+    "id": "item177",
+    "name": "Pull-up Bar",
+    "description": "Doorway pull-up bar",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 90,
+    "tags": ["fitness", "exercise", "pull-up"]
+  },
+  {
+    "id": "item178",
+    "name": "Kettlebell 20lb",
+    "description": "Cast iron kettlebell",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 75,
+    "tags": ["fitness", "weights", "kettlebell"]
+  },
+  {
+    "id": "item179",
+    "name": "Bike Stationary",
+    "description": "Indoor stationary exercise bike",
+    "price": 299.99,
+    "inStock": true,
+    "quantity": 25,
+    "tags": ["fitness", "bike", "cardio"]
+  },
+  {
+    "id": "item180",
+    "name": "Treadmill Folding",
+    "description": "Compact folding treadmill with LCD",
+    "price": 499.99,
+    "inStock": false,
+    "quantity": 0,
+    "tags": ["fitness", "treadmill", "cardio"]
+  },
+  {
+    "id": "item181",
+    "name": "Massage Gun",
+    "description": "Deep tissue massage gun with 6 heads",
+    "price": 89.99,
+    "inStock": true,
+    "quantity": 60,
+    "tags": ["recovery", "massage", "health"]
+  },
+  {
+    "id": "item182",
+    "name": "Gym Bag",
+    "description": "Duffel gym bag with shoe compartment",
+    "price": 34.99,
+    "inStock": true,
+    "quantity": 150,
+    "tags": ["fitness", "bag", "accessories"]
+  },
+  {
+    "id": "item183",
+    "name": "Protein Shaker Bottle",
+    "description": "Leak-proof shaker bottle 28oz",
+    "price": 12.99,
+    "inStock": true,
+    "quantity": 350,
+    "tags": ["fitness", "bottle", "shaker"]
+  },
+  {
+    "id": "item184",
+    "name": "Fitness Tracker",
+    "description": "Activity tracker with heart rate monitor",
+    "price": 49.99,
+    "inStock": true,
+    "quantity": 120,
+    "tags": ["fitness", "tracker", "wearable"]
+  },
+  {
+    "id": "item185",
+    "name": "Sports Watch",
+    "description": "GPS sports watch with multisport modes",
+    "price": 149.99,
+    "inStock": true,
+    "quantity": 55,
+    "tags": ["sports", "watch", "gps"]
+  },
+  {
+    "id": "item186",
+    "name": "Bicycle Helmet",
+    "description": "Adjustable adult bike helmet",
+    "price": 39.99,
+    "inStock": true,
+    "quantity": 130,
+    "tags": ["cycling", "safety", "helmet"]
+  },
+  {
+    "id": "item187",
+    "name": "Bike Lights Set",
+    "description": "Rechargeable front and rear bike lights",
+    "price": 24.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["cycling", "lights", "safety"]
+  },
+  {
+    "id": "item188",
+    "name": "Water Bottle Cage",
+    "description": "Bike water bottle holder cage",
+    "price": 9.99,
+    "inStock": true,
+    "quantity": 400,
+    "tags": ["cycling", "accessories", "bottle"]
+  },
+  {
+    "id": "item189",
+    "name": "Bike Repair Kit",
+    "description": "Bicycle repair tool kit with bag",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 140,
+    "tags": ["cycling", "repair", "tools"]
+  },
+  {
+    "id": "item190",
+    "name": "Bike Pump Portable",
+    "description": "Mini portable bike pump with gauge",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 200,
+    "tags": ["cycling", "pump", "accessories"]
+  },
+  {
+    "id": "item191",
+    "name": "Sunglasses Sport",
+    "description": "Polarized sport sunglasses UV400",
+    "price": 29.99,
+    "inStock": true,
+    "quantity": 170,
+    "tags": ["sports", "sunglasses", "accessories"]
+  },
+  {
+    "id": "item192",
+    "name": "Running Shoes",
+    "description": "Lightweight running shoes with cushion",
+    "price": 79.99,
+    "inStock": true,
+    "quantity": 100,
+    "tags": ["sports", "shoes", "running"]
+  },
+  {
+    "id": "item193",
+    "name": "Athletic Socks 6-Pack",
+    "description": "Moisture-wicking athletic socks",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 300,
+    "tags": ["sports", "socks", "clothing"]
+  },
+  {
+    "id": "item194",
+    "name": "Compression Sleeves",
+    "description": "Arm compression sleeves pair",
+    "price": 16.99,
+    "inStock": true,
+    "quantity": 220,
+    "tags": ["sports", "compression", "recovery"]
+  },
+  {
+    "id": "item195",
+    "name": "Cooling Towel",
+    "description": "Instant cooling towel 3-pack",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 280,
+    "tags": ["sports", "towel", "cooling"]
+  },
+  {
+    "id": "item196",
+    "name": "Sweatband Set",
+    "description": "Headband and wristband set",
+    "price": 9.99,
+    "inStock": true,
+    "quantity": 350,
+    "tags": ["sports", "sweatband", "accessories"]
+  },
+  {
+    "id": "item197",
+    "name": "Stopwatch",
+    "description": "Digital stopwatch with lap timer",
+    "price": 14.99,
+    "inStock": true,
+    "quantity": 180,
+    "tags": ["sports", "timer", "stopwatch"]
+  },
+  {
+    "id": "item198",
+    "name": "Whistle Pack 10",
+    "description": "Sports whistles 10-pack with lanyards",
+    "price": 12.99,
+    "inStock": true,
+    "quantity": 250,
+    "tags": ["sports", "whistle", "coaching"]
+  },
+  {
+    "id": "item199",
+    "name": "Sports Bag Duffel",
+    "description": "Large sports duffel bag with pockets",
+    "price": 44.99,
+    "inStock": true,
+    "quantity": 110,
+    "tags": ["sports", "bag", "duffel"]
+  },
+  {
+    "id": "item200",
+    "name": "Agility Ladder",
+    "description": "Speed and agility training ladder 12 rungs",
+    "price": 19.99,
+    "inStock": true,
+    "quantity": 160,
+    "tags": ["training", "agility", "sports"]
+  }
+]
