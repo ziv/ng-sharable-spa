@@ -180,7 +180,7 @@ export class SimpleTable {
       param.set('pageSize', String(p?.pageSize ?? 5));
       param.set('filter', p?.filter ?? '');
 
-      return `http://localhost:4200/table.json?${param.toString()}`;
+      return `https://ziv.github.io/ng-sharable-spa/table.json?${param.toString()}`;
     },
     {defaultValue: {items: [], total: 0}},
   );
