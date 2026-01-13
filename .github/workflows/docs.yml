@@ -34,7 +34,7 @@ jobs:
           node-version: 24
 
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
 
       - name: Build docs
         run: npm run build
