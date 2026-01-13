@@ -21,6 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "baseHref": "/ng-sharable-spa/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
