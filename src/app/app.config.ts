@@ -1,11 +1,14 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
-
-import { routes } from './app.routes';
+import {ApplicationConfig, provideBrowserGlobalErrorListeners} from '@angular/core';
+import {provideRouter, withViewTransitions} from '@angular/router';
+import {provideHttpClient, withFetch, withInterceptors} from '@angular/common/http';
+import {routes} from './app.routes';
+import {fakeServer} from './interceptors/fake-server';
+import {httpCache} from './interceptors/http-cache';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideHttpClient(withFetch(), withInterceptors([fakeServer, httpCache])),
+    provideRouter(routes, withViewTransitions())
   ]
 };

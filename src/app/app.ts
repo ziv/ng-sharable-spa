@@ -1,16 +1,22 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterLink, RouterOutlet} from '@angular/router';
+import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MatButton, RouterLink],
+  host: {
+    class: 'flex flex-col gap-2 h-full'
+  },
   template: `
-    <h1>Hello, {{ title() }}</h1>
-
-    <router-outlet />
+    <section class="mx-8 mt-4 flex gap-2">
+      <button matButton="tonal" routerLink="/main">Sample Data Table</button>
+      <button matButton="tonal" routerLink="/github">Github Issues Table</button>
+    </section>
+    <section class="mx-8">
+      <router-outlet/>
+    </section>
   `,
-  styles: [],
 })
 export class App {
-  protected readonly title = signal('triada');
 }
