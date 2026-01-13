@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "triada": {
+    "ng-sharable-spa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
