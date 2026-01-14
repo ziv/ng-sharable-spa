@@ -1,9 +1,17 @@
 import type {HttpHandlerFn, HttpRequest} from '@angular/common/http';
 import {HttpResponse} from '@angular/common/http';
 import {of, tap} from 'rxjs';
+import {inject} from '@angular/core';
+import {AppSettings} from '../app.settings';
 
 /**
- * Simple HTTP caching mechanism.
+ * Simple HTTP caching mechanism
+ *
+ * It caches GET requests in sessionStorage for a duration defined in app settings.
+ * It not ensure cache size limits or eviction policies beyond TTL expiration.
+ * Do not use in production without further enhancements.
+ *
+ * In the app, hit `ctrl+s` to open settings and toggle caching options.
  *
  * @param req
  * @param next
@@ -13,8 +21,13 @@ export function httpCache(req: HttpRequest<unknown>, next: HttpHandlerFn) {
     return next(req);
   }
 
-  const CACHE_DURATION = 1000 * 60 * 5; // 5 minutes
+  const settings = inject(AppSettings).settings();
 
+  if (!settings.useCache) {
+    return next(req);
+  }
+
+  const CACHE_DURATION = 1000 * settings.cacheTTL;
   const key = `http-cache-${req.urlWithParams}`;
   const cached = sessionStorage.getItem(key);
 
@@ -39,6 +52,7 @@ export function httpCache(req: HttpRequest<unknown>, next: HttpHandlerFn) {
       sessionStorage.removeItem(key);
     }
   }
+
   return next(req).pipe(
     tap((event) => {
       if (event instanceof HttpResponse) {

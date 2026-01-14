@@ -9,6 +9,10 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(withFetch(), withInterceptors([fakeServer, httpCache])),
-    provideRouter(routes, withHashLocation(), withViewTransitions())
+    provideRouter(
+      routes,
+      withHashLocation(), // to enable hash-based routing for GitHub pages
+      withViewTransitions(),
+    )
   ]
 };

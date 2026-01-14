@@ -1,4 +1,4 @@
-import {Component, effect, inject, signal} from '@angular/core';
+import {Component, computed, effect, inject, signal} from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule, Sort} from '@angular/material/sort';
 import {MatPaginator, PageEvent} from '@angular/material/paginator';
@@ -9,6 +9,8 @@ import {MatFormField, MatInput, MatLabel, MatSuffix} from '@angular/material/inp
 import {MatIcon} from '@angular/material/icon';
 import {debounce, Field, form} from '@angular/forms/signals';
 import {HighlightSearch} from '../../pipes/highlight';
+import {JsonPipe} from '@angular/common';
+import {TableSkeleton} from '../../components/table-skeleton';
 
 export type TableItem = {
   id: string;
@@ -45,8 +47,18 @@ export type QueryParams = {
     MatIcon,
     MatSuffix,
     Field,
-    HighlightSearch
+    HighlightSearch,
+    JsonPipe,
+    TableSkeleton
   ],
+  styles: `
+    th {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+  `,
   template: `
     <div class="shadow-lg rounded-lg">
 
@@ -56,75 +68,110 @@ export type QueryParams = {
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
 
-      <table mat-table
-             matSort
-             matSortDisableClear
-             [matSortActive]="params()?.['sortActive']"
-             [matSortDirection]="params()?.['sortDirection']"
-             [dataSource]="items.value().items"
-             (matSortChange)="sortChange($event)">
+      @if (items.error()) {
+        <!--
+        --------------------------------------------------------------------------
+        Error State
+        --------------------------------------------------------------------------
+        -->
+        <div>
+          <p class="text-red-400">An error occurred while loading data:</p>
+          <pre>{{ items.error() | json }}</pre>
+        </div>
+      } @else if (items.isLoading()) {
+        <!--
+        --------------------------------------------------------------------------
+        Loading State
+        --------------------------------------------------------------------------
+        -->
+        <app-table-skeleton [desc]="skeleton()"/>
+      } @else if (items.hasValue()) {
+        <!--
+        --------------------------------------------------------------------------
+        Data Loaded State
+        --------------------------------------------------------------------------
+        -->
+        <div style="max-height:calc(100vh - 15rem);overflow-y: auto">
+          <table mat-table
+                 matSort
+                 matSortDisableClear
+                 [matSortActive]="params()?.['sortActive']"
+                 [matSortDirection]="params()?.['sortDirection']"
+                 [dataSource]="items.value().items"
+                 (matSortChange)="sortChange($event)">
 
 
-        <ng-container matColumnDef="id">
-          <th mat-header-cell
-              mat-sort-header
-              *matHeaderCellDef>ID
-          </th>
-          <td mat-cell *matCellDef="let e">{{ e['id'] }}
-          </td>
-        </ng-container>
+            <ng-container matColumnDef="id">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>ID
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-1/8">{{ e['id'] }}
+              </td>
+            </ng-container>
 
-        <ng-container matColumnDef="name">
-          <th mat-header-cell
-              mat-sort-header
-              *matHeaderCellDef>Name
-          </th>
-          <td mat-cell *matCellDef="let e" class="w-2xs">
-            <span [innerHTML]="e['name'] | highlightSearch:userInput().filter"></span>
-          </td>
-        </ng-container>
+            <ng-container matColumnDef="name">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>Name
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-2/8">
+                <span [innerHTML]="e['name'] | highlightSearch:userInput().filter"></span>
+              </td>
+            </ng-container>
 
-        <ng-container matColumnDef="description">
-          <th mat-header-cell
-              mat-sort-header
-              *matHeaderCellDef>Description
-          </th>
-          <td mat-cell *matCellDef="let e" class="w-xl">
-            <span [innerHTML]="e['description'] | highlightSearch:userInput().filter"></span>
-          </td>
-        </ng-container>
+            <ng-container matColumnDef="description">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>Description
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-2/8">
+                <span [innerHTML]="e['description'] | highlightSearch:userInput().filter"></span>
+              </td>
+            </ng-container>
 
-        <ng-container matColumnDef="price">
-          <th mat-header-cell
-              mat-sort-header
-              *matHeaderCellDef>Price
-          </th>
-          <td mat-cell *matCellDef="let e">{{ e['price'] }}$
-          </td>
-        </ng-container>
+            <ng-container matColumnDef="price">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>Price
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-1/8">{{ e['price'] }}$
+              </td>
+            </ng-container>
 
-        <ng-container matColumnDef="inStock">
-          <th mat-header-cell
-              mat-sort-header
-              *matHeaderCellDef>In Stock
-          </th>
-          <td mat-cell *matCellDef="let e">{{ e['inStock'] ? 'Yes' : 'No' }}</td>
-        </ng-container>
+            <ng-container matColumnDef="inStock">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>In Stock
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-1/8">{{ e['inStock'] ? 'Yes' : 'No' }}</td>
+            </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="cols()"></tr>
-        <tr mat-row *matRowDef="let row; columns: cols();"></tr>
-      </table>
+            <ng-container matColumnDef="quantity">
+              <th mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef>Quantity
+              </th>
+              <td mat-cell *matCellDef="let e" class="w-1/8">{{ e['quantity'] }}
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="cols()"></tr>
+            <tr mat-row *matRowDef="let row; columns: cols();"></tr>
+          </table>
+        </div>
+      }
       <mat-paginator [pageSizeOptions]="itemsPerPage()"
                      [length]="items.value().total"
                      [pageIndex]="params()?.['pageIndex'] || 0"
                      [pageSize]="params()?.['pageSize'] || 5"
+                     [disabled]="items.isLoading()"
                      (page)="pageChange($event)"
                      showFirstLastButtons
                      aria-label="Select page of items">
       </mat-paginator>
     </div>
   `,
-  styles: ``,
 })
 
 export class SimpleTable {
@@ -158,7 +205,7 @@ export class SimpleTable {
   /**
    * List of columns to display
    */
-  readonly cols = signal(['name', 'description', 'id', 'price', 'inStock']);
+  readonly cols = signal(['name', 'description', 'id', 'price', 'inStock', 'quantity']);
 
   /**
    * Items per page options (paginator)
@@ -185,6 +232,17 @@ export class SimpleTable {
     {defaultValue: {items: [], total: 0}},
   );
 
+  protected readonly skeleton = computed(() => ({
+    cols: [
+      {title: 'Name', width: 'w-2/8'},
+      {title: 'Description', width: 'w-2/8'},
+      {title: 'ID', width: 'w-1/8'},
+      {title: 'Price', width: 'w-1/8'},
+      {title: 'In Stock', width: 'w-1/8'},
+      {title: 'Quantity', width: 'w-1/8'},
+    ],
+    rows: parseInt(this.params()?.['pageSize'] || '5', 10),
+  }));
 
   constructor() {
     effect(async () => {

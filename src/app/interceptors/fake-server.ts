@@ -1,10 +1,17 @@
 import type {HttpHandlerFn, HttpRequest} from '@angular/common/http';
 import {HttpResponse} from '@angular/common/http';
-import {map} from 'rxjs';
+import {delay, map} from 'rxjs';
 import type {TableItem} from '../features/simple-table/simple-table';
+import {inject} from '@angular/core';
+import {AppSettings} from '../app.settings';
 
-function handleTableJson(items: TableItem[], url: string) {
-  const searchParams = new URL(url).searchParams;
+/**
+ * Emulate server-side pagination, sorting, and filtering of table data using URL query parameters.
+ * @param e
+ */
+function emulateServerResponse(e: HttpResponse<unknown>) {
+  let items: TableItem[] = (e.body as TableItem[]) || [];
+  const searchParams = new URL(e.url as string).searchParams;
 
   const sortActive = searchParams.get('sortActive') || 'id';
   const sortDirection = searchParams.get('sortDirection') || 'asc';
@@ -33,36 +40,35 @@ function handleTableJson(items: TableItem[], url: string) {
   const start = pageIndex * pageSize;
   const end = start + pageSize;
   const total = items.length;
-  return {
-    total,
-    items: items.slice(start, end)
-  };
+
+  return new HttpResponse({
+    body: {
+      total,
+      items: items.slice(start, end)
+    },
+    status: 200,
+    url: e.url as string,
+  });
 }
 
 /**
- * Emulate pagination, sorting, and filtering on a fake data.
+ * Emulate pagination, sorting, and filtering on a fake data on specific endpoint '/table.json'.
+ *
+ * In the app, hit `ctrl+s` to open settings and toggle network latency simulation.
  *
  * @param req
  * @param next
  */
 export function fakeServer(req: HttpRequest<unknown>, next: HttpHandlerFn) {
-  const obs = next(req);
-
   if (!req.url.includes('/table.json')) {
-    return obs;
+    return next(req);
   }
 
-  return obs.pipe(
-    map(e => {
-      if (e instanceof HttpResponse) {
-        console.log('Fake server handling ', e.url);
-        return new HttpResponse({
-          body: handleTableJson(e.body as TableItem[], e.url as string),
-          status: 200,
-          url: req.urlWithParams,
-        });
-      }
-      return e;
-    })
+  const settings = inject(AppSettings).settings();
+  const latency = settings.simulateNetworkLatency ? settings.networkLatency : 0;
+
+  return next(req).pipe(
+    delay(latency), // simulate server delay (multiplied by all events in the chain, not only responses)
+    map(e => (e instanceof HttpResponse) ? emulateServerResponse(e) : e),
   );
 }

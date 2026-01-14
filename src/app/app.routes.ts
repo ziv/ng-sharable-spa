@@ -2,7 +2,7 @@ import {Routes} from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'main',
+    path: 'simple',
     loadComponent: () => import('./features/simple-table/simple-table')
   },
   {
@@ -10,8 +10,12 @@ export const routes: Routes = [
     loadComponent: () => import('./features/github/github-issues-table')
   },
   {
+    path: 'about',
+    loadComponent: () => import('./features/about/about')
+  },
+  {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'simple',
     pathMatch: 'full'
   }
 ];

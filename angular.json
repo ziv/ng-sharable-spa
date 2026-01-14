@@ -63,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "triada:build:production"
+              "buildTarget": "ng-sharable-spa:build:production"
             },
             "development": {
-              "buildTarget": "triada:build:development"
+              "buildTarget": "ng-sharable-spa:build:development"
             }
           },
           "defaultConfiguration": "development"
