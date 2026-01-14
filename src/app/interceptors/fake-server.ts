@@ -52,7 +52,7 @@ function emulateServerResponse(e: HttpResponse<unknown>) {
 }
 
 /**
- * Emulate pagination, sorting, and filtering on a fake data on specific endpoint '/table.json'.
+ * Emulate server behavior on specific endpoint '/table.json'.
  *
  * In the app, hit `ctrl+s` to open settings and toggle network latency simulation.
  *

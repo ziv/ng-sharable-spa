@@ -4,6 +4,18 @@ import {of, tap} from 'rxjs';
 import {inject} from '@angular/core';
 import {AppSettings} from '../app.settings';
 
+type CacheEntry = {
+  timestamp: number;
+  data: unknown;
+};
+
+function isCacheEntry(obj: unknown): obj is CacheEntry {
+  return obj !== null
+    && typeof obj === 'object'
+    && 'timestamp' in obj
+    && 'data' in obj;
+}
+
 /**
  * Simple HTTP caching mechanism
  *
@@ -27,14 +39,13 @@ export function httpCache(req: HttpRequest<unknown>, next: HttpHandlerFn) {
     return next(req);
   }
 
-  const CACHE_DURATION = 1000 * settings.cacheTTL;
   const key = `http-cache-${req.urlWithParams}`;
   const cached = sessionStorage.getItem(key);
 
   if (cached) {
     try {
-      const entry = JSON.parse(cached) as { timestamp: number; data: unknown };
-      if (Date.now() - entry.timestamp < CACHE_DURATION) {
+      const entry = JSON.parse(cached) as CacheEntry;
+      if (isCacheEntry(entry) && Date.now() - entry.timestamp < settings.cacheTTL) {
         console.log('Serving from cache:', req.urlWithParams);
         return of(
           new HttpResponse({
@@ -45,7 +56,8 @@ export function httpCache(req: HttpRequest<unknown>, next: HttpHandlerFn) {
           }),
         );
       }
-      // expired cache entry
+
+      // expired or invalid cache entry
       sessionStorage.removeItem(key);
     } catch {
       // invalid cache entry
