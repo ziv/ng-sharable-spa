@@ -5,8 +5,9 @@ import {Component} from '@angular/core';
   template: `
     <div class="flex items-center justify-center">
       <div class="p-8 rounded-lg shadow-lg">
-        <h1 class="text-xl">About this application</h1>
+        <h1 class="text-xl pt-4">About this application</h1>
         <p>Educational Angular application demonstrating various features and best practices.</p>
+        <p>Use <kbd>CTRL+S</kbd> for opening settings.</p>
 
         <h2 class="text-lg pt-4">Share page state</h2>
         <p>Using URL query parameters to share the current state of the page (filters, sorting, pagination).</p>
