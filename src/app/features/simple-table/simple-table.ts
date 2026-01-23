@@ -184,6 +184,7 @@ export class SimpleTable {
    */
   private readonly router = inject(Router);
 
+  protected readonly pag = signal<any>({});
 
   /**
    * Represent the user input
