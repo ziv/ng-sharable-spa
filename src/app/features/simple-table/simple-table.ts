@@ -157,7 +157,10 @@ export type QueryParams = {
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="cols()"></tr>
-            <tr mat-row *matRowDef="let row; columns: cols();"></tr>
+            <tr mat-row
+                *matRowDef="let row; columns: cols();let i = index"
+                [style.--i]="i">
+            </tr>
           </table>
         </div>
       }
