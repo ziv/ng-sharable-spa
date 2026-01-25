@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {InverseColor} from '../../../pipes/inverse-color';
 
 export type GithubIssueLabel = {
@@ -9,6 +9,7 @@ export type GithubIssueLabel = {
 
 @Component({
   selector: 'app-github-labels',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'flex flex-wrap gap-1',
   },

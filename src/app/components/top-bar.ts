@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {MatButton, MatIconButton} from '@angular/material/button';
 import {MatIcon} from '@angular/material/icon';
 import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'td-top-bar',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MatButton,
     MatIcon,

@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
 import {SettingsDialog} from './components/settings-dialog';
@@ -6,6 +6,7 @@ import {TopBar} from './components/top-bar';
 
 @Component({
   selector: 'app-root',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, TopBar],
   host: {
     class: 'flex flex-col gap-2 h-full',
@@ -19,7 +20,7 @@ import {TopBar} from './components/top-bar';
       -->
       <td-top-bar/>
     }
-    <section class="mx-8">
+    <section class="mx-8 flex-1">
       <router-outlet/>
     </section>
   `,

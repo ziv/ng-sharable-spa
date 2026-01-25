@@ -1,4 +1,4 @@
-import {Component, computed, effect, inject, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, effect, inject, signal} from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule, Sort} from '@angular/material/sort';
 import {MatPaginator, PageEvent} from '@angular/material/paginator';
@@ -37,6 +37,7 @@ export type QueryParams = {
 
 @Component({
   selector: 'app-main-table',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MatTableModule,
     MatSortModule,
@@ -52,6 +53,11 @@ export type QueryParams = {
     TableSkeleton
   ],
   styles: `
+    :host {
+      display: block;
+      height: stretch;
+    }
+
     th {
       position: sticky;
       top: 0;
@@ -164,7 +170,7 @@ export type QueryParams = {
           </table>
         </div>
       }
-      <mat-paginator [pageSizeOptions]="itemsPerPage()"
+      <mat-paginator [pageSizeOptions]="[5, 10]"
                      [length]="items.value().total"
                      [pageIndex]="params()?.['pageIndex'] || 0"
                      [pageSize]="params()?.['pageSize'] || 5"
@@ -183,8 +189,6 @@ export class SimpleTable {
    * @private
    */
   private readonly router = inject(Router);
-
-  protected readonly pag = signal<any>({});
 
   /**
    * Represent the user input
@@ -210,11 +214,6 @@ export class SimpleTable {
    * List of columns to display
    */
   readonly cols = signal(['name', 'description', 'id', 'price', 'inStock', 'quantity']);
-
-  /**
-   * Items per page options (paginator)
-   */
-  readonly itemsPerPage = signal<number[]>([5, 10]);
 
   /**
    * Resource loader

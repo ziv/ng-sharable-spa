@@ -1,10 +1,11 @@
-import {Component, effect, inject, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, effect, inject, signal} from '@angular/core';
 import {MatFormField, MatInput, MatLabel} from '@angular/material/input';
 import {debounce, Field, form} from '@angular/forms/signals';
 import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-github-filters',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MatFormField,
     MatLabel,

@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {Field, form, required} from '@angular/forms/signals';
 import {AppSettings} from '../app.settings';
 import {MatSlideToggle} from '@angular/material/slide-toggle';
@@ -7,6 +7,7 @@ import {MatFormField, MatHint, MatInput, MatLabel} from '@angular/material/input
 
 @Component({
   selector: 'td-settings',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [Field, MatSlideToggle, MatDialogContent, MatDialogTitle, MatFormField, MatLabel, MatInput, MatHint],
   template: `
     <h2 mat-dialog-title>Settings</h2>

@@ -8,11 +8,17 @@ import {httpCache} from './interceptors/http-cache';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideHttpClient(withFetch(), withInterceptors([fakeServer, httpCache])),
+    provideHttpClient(
+      withFetch(),
+      withInterceptors([
+        fakeServer, // mock backend
+        httpCache, // simple in-memory HTTP cache (use ctrl+s to open settings and disable it)
+      ]),
+    ),
     provideRouter(
       routes,
       withHashLocation(), // to enable hash-based routing for GitHub pages
-      withViewTransitions(),
+      withViewTransitions(), // provide view transitions on route changes
     )
   ]
 };
