@@ -1,7 +1,6 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
-import {SettingsDialog} from './components/settings-dialog';
 import {TopBar} from './components/top-bar';
 
 @Component({
@@ -16,7 +15,7 @@ import {TopBar} from './components/top-bar';
     @defer {
       <!--
       we defer this part because it contain material components
-      that we don't want to be part of the initial bundle
+      that we don't want them to be part of the initial bundle
       -->
       <td-top-bar/>
     }
@@ -28,7 +27,9 @@ import {TopBar} from './components/top-bar';
 export class App {
   private readonly dialog = inject(MatDialog);
 
-  openSettings() {
+  async openSettings() {
+    // lazy load the settings dialog component
+    const {SettingsDialog} = await import('./components/settings-dialog');
     this.dialog.open(SettingsDialog);
   }
 }
